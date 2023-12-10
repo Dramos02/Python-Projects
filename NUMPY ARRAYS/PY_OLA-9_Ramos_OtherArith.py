@@ -91,7 +91,8 @@ while True:
         print(f"\nQuotient: {quotient}, Remainder: {remainder}.")
     elif choice == '4':
         result = np.frompyfunc(dominicabsolute, 1, 1)(arr1)
-        print(f"\nAbsolute values are {result}.")
+        result_arr2 = np.frompyfunc(dominicabsolute, 1, 1)(arr2)
+        print(f"\nAbsolute values for Array One:{result} and \n{result_arr2}.")
 
     # The user will have the choice to perform another basic arithmetic operation
     while True:
